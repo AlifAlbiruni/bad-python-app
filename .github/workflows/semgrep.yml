@@ -23,6 +23,6 @@ jobs:
       image: semgrep/semgrep
     steps:
     - name: Manually fail this job
-    - run: exit 1
+      run: exit 1
     - uses: actions/checkout@v4
     - run: semgrep ci
